@@ -11,7 +11,7 @@ class Target{
         World.add(world, this.body);
       }
       display(){
-        if (isTouching(this.body,ball)) {
+        if( this.body.speed>6) {
           World.remove(world,this.body);   
              }
          else{
